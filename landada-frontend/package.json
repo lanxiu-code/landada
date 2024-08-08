@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "author": "lx <3403138527@qq.com>",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev",
+    "openapi": "node openapi.config.ts"
+  },
+  "dependencies": {
+    "@arco-design/web-react": "^2.63.1",
+    "@bytemd/plugin-gfm": "^1.21.0",
+    "@bytemd/plugin-highlight": "^1.21.0",
+    "@bytemd/react": "^1.21.0",
+    "@types/pubsub-js": "^1.8.6",
+    "@wangeditor/editor": "^5.1.23",
+    "@wangeditor/editor-for-react": "^1.0.6",
+    "axios": "^1.7.2",
+    "dayjs": "^1.11.12",
+    "prettier": "^3.3.3",
+    "pubsub-js": "^1.9.4",
+    "qrcode": "^1.5.4",
+    "querystring": "^0.2.1",
+    "umi": "^4.3.9"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "@umijs/openapi": "^1.12.1",
+    "@umijs/plugins": "^4.3.9",
+    "typescript": "^5.0.3"
+  }
+}

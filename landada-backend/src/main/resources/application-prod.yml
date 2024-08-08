@@ -1,0 +1,71 @@
+# 线上配置文件
+# @author lx
+# 
+server:
+  port: 8101
+  servlet:
+    session:
+      cookie:
+        same-site: none
+        secure: true
+spring:
+  # 数据库配置
+  # todo 需替换配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/landada
+    username: root
+    password: root
+  shardingsphere:
+    # 数据库配置
+    datasource:
+      names: landada
+      landada:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/landada
+        username: root
+        password: root
+    # 规则配置
+    rules:
+      sharding:
+        # 分片算法配置
+        sharding-algorithms:
+          # 自定义分片规则名
+          answer-table-inline:
+            # 自定义分片算法类
+            type: inline
+            props:
+              # 自定义分片算法参数
+              algorithm-expression: user_answer_$->{appId % 2}
+        tables:
+          user_answer:
+            actual-data-nodes: landada.user_answer_$->{0..1}
+            # 分表策略
+            table-strategy:
+              standard:
+                sharding-column: appId
+                sharding-algorithm-name: answer-table-inline
+mybatis-plus:
+  configuration:
+    # 生产环境关闭日志
+    log-impl: ''
+# 接口文档的配置
+springdoc:
+  group-configs:
+    - group: 'default'
+      packages-to-scan: com.lx.landada.controller
+# knife4j的增强配置，不需要增强可以不配
+knife4j:
+  # 开启增强配置
+  enable: true
+  # 开启生产环境屏蔽
+  production: false
+  # 开启Swagger的Basic认证功能,默认是false
+  basic:
+    enable: true
+    # Basic认证用户名
+    username: root
+    # Basic认证密码
+    password: root
+    
