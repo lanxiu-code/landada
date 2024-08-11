@@ -25,6 +25,10 @@
 用户登录页：
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/35349136/1723096096126-1406cc28-ba79-43aa-bf9b-1b12d991d5fe.png#averageHue=%23a4d4ac&clientId=u38ded80c-8acd-4&from=paste&height=885&id=u3da6eefb&originHeight=1106&originWidth=1858&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=1349472&status=done&style=none&taskId=u80c95ec7-305f-445f-a823-e38c6cd7ad6&title=&width=1486.4)
 
+首页：
+
+![image.png](https://cdn.nlark.com/yuque/0/2024/png/35349136/1723381533813-37bee559-221c-4267-b0fa-a7fd136729bc.png?x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cw_937%2Climit_0)
+
 应用详情页：
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/35349136/1723096155175-331688a9-e596-498e-9363-de03cf8e188b.png#averageHue=%23faf6f5&clientId=u38ded80c-8acd-4&from=paste&height=546&id=u22edaf66&originHeight=683&originWidth=1847&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=350540&status=done&style=none&taskId=u12f3d324-cadd-4d50-82ed-366819945c3&title=&width=1477.6)
 
@@ -40,7 +44,16 @@
 应用分享功能：
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/35349136/1723096319204-1f1b1e37-80e8-46d2-9f96-2ea212531de2.png#averageHue=%23535c5f&clientId=u38ded80c-8acd-4&from=paste&height=565&id=u770388ff&originHeight=706&originWidth=1317&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=419371&status=done&style=none&taskId=u99569719-ff0b-478c-9b56-64568f533ad&title=&width=1053.6)
 
+
+
+数据统计分析页：
+
+![image](https://cdn.nlark.com/yuque/0/2024/png/35349136/1723381552793-b0f823fb-1be3-4a8c-90ad-604dace1fe75.png?x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cw_937%2Climit_0)
+
+
+
 ## 技术选型
+
 ### 后端
 
 - Java Spring Boot 开发框架（万用后端模板）
