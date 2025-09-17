@@ -18,19 +18,29 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           version: 8
-          run_install: false
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'pnpm'  # 使用 pnpm 缓存
+          cache: 'pnpm'
 
-      - name: Install dependencies and build
+      - name: Install dependencies
         working-directory: ./landada-frontend
+        run: pnpm install --frozen-lockfile
+
+      - name: Debug file structure
         run: |
-          pnpm install
-          pnpm run build
+          echo "Current directory:"
+          pwd
+          echo "Contents:"
+          ls -la
+          echo "Frontend directory contents:"
+          ls -la landada-frontend
+
+      - name: Build
+        working-directory: ./landada-frontend
+        run: pnpm run build
 
       - name: Verify build output
         working-directory: ./landada-frontend
