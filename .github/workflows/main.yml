@@ -21,8 +21,8 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies and build
-        working-directory: ./landada-frontend  # 切换到前端目录
         run: |
+          cd ./landada-frontend
           npm install
           npm run build
         
