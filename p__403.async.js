@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[864],{45236:function(e,s,u){u.r(s);var t=u(77240),n=u(52676);s.default=function(){return(0,n.jsx)("div",{children:(0,n.jsx)(t.Z,{status:"403",subTitle:"\u62B1\u6B49\uFF0C\u4F60\u6CA1\u6709\u6743\u9650",style:{marginTop:"20%"}})})}}}]);
